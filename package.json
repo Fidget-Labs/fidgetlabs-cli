@@ -1,0 +1,50 @@
+{
+  "name": "fidgetlabs",
+  "version": "1.0.0",
+  "description": "Official CLI and SDK for the Fidget Labs public API: published euro pricing and EU AI Act risk classification. No API key.",
+  "keywords": [
+    "fidget-labs",
+    "eu-ai-act",
+    "ai-regulation",
+    "risk-classification",
+    "composable-architecture",
+    "cli",
+    "sdk",
+    "mcp",
+    "agents"
+  ],
+  "homepage": "https://fidgetlabs.io/developers",
+  "bugs": {
+    "url": "https://github.com/Fidget-Labs/fidgetlabs-cli/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Fidget-Labs/fidgetlabs-cli.git"
+  },
+  "license": "MIT",
+  "author": "Fidget Labs B.V. (https://fidgetlabs.io)",
+  "type": "module",
+  "main": "./index.js",
+  "types": "./index.d.ts",
+  "exports": {
+    ".": {
+      "types": "./index.d.ts",
+      "default": "./index.js"
+    }
+  },
+  "bin": {
+    "fidgetlabs": "bin/fidgetlabs.js"
+  },
+  "files": [
+    "index.js",
+    "index.d.ts",
+    "bin/",
+    "AGENTS.md"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "test": "node --test \"test/**/*.test.js\""
+  }
+}
